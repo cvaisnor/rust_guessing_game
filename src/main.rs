@@ -32,11 +32,11 @@ fn main() {
         // match is an expression made of arms, each arm has a pattern and the code that should be run if the value given to the beginning of the match expression fits that arm's pattern
         match guess.cmp(&secret_number) { // compares two values and can be called on anything that can be compared
             Ordering::Less => println!("Too small!"),
-            Ordering::Greater => println!("Too big!"), // the match expression gets this arm and checks it againsts the othe
+            Ordering::Greater => println!("Too big!"), // the match expression gets this arm and checks it againsts the others
             Ordering::Equal => {
                 println!("You win!");
                 break;
             }
-        } //
+        }
     }
 }
